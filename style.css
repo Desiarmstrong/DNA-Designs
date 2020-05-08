@@ -112,7 +112,7 @@ body {
   font-size: 200px;
   color: rgba(0,0,0,0.1);
 }
-.hero {
+/*.hero {
 	width: 100vw;
 	height: 100vh;
 	background-image: url("Hero.png");
@@ -121,7 +121,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	opacity: 100%;
-}
+}*/
 /*
 .hero-inner{
 	color: #f8dbe0;
