@@ -405,3 +405,66 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+
+/* DNA Designs 2026 visual system: charcoal / warm ivory / muted gold */
+:root { --ink:#151515; --ink-soft:#252320; --cream:#f7f4ee; --gold:#d1ad72; --gold-dark:#946b32; --body:#403d39; }
+html { background:var(--cream); }
+body { font-family:"DM Sans",Arial,sans-serif !important; color:var(--body); background:var(--cream) !important; line-height:1.65; }
+h1,h2,h3,.card-title { font-family:"Playfair Display",Georgia,serif !important; letter-spacing:-.025em; }
+.topnav { background:rgba(20,20,20,.97) !important; opacity:1 !important; color:white; box-shadow:none; border-bottom:1px solid rgba(255,255,255,.14); }
+.topnav a { color:#f4eee5 !important; letter-spacing:.08em; font-size:13px; }
+.topnav a:hover,.topnav a:focus { color:var(--gold) !important; }
+.topnav a:after { background:var(--gold); }
+.hero { min-height:610px; background:linear-gradient(110deg,rgba(11,11,11,.97) 0%,rgba(20,19,17,.94) 52%,rgba(36,30,23,.77) 100%) !important; color:#fff; display:flex; align-items:center; }
+.hero #box { max-width:960px; padding:4rem 5%; margin:0 auto; width:100%; background:transparent; color:#fff; box-shadow:none; }
+.hero h1 { font-size:clamp(3rem,6vw,6rem) !important; line-height:1.1; color:#fff !important; max-width:920px; margin:1.3rem 0; }
+.hero h1 em { color:var(--gold); font-weight:500; font-style:normal; }
+.hero p { max-width:620px; color:#e4dfd6; font-size:1.1rem; }
+.eyebrow { font:600 12px/1.5 "DM Sans",sans-serif !important; letter-spacing:.28em; color:var(--gold-dark); text-transform:uppercase; }
+.hero .eyebrow { color:var(--gold); }
+.centered { text-align:center; padding-top:3rem; }
+.btn.btn-primary { background:var(--gold) !important; border:1px solid var(--gold) !important; color:var(--ink) !important; border-radius:5px; padding:14px 24px; font-weight:700; text-decoration:none; }
+.btn.btn-primary:hover { background:#ead0a3 !important; border-color:#ead0a3 !important; }
+#about, #services { text-align:center; color:var(--ink); max-width:900px; margin:1rem auto 2rem; font-size:clamp(2.4rem,4vw,4.5rem); }
+.container-fluid { max-width:1240px; margin:0 auto; }
+.card { background:#fff !important; padding:30px !important; min-height:310px; border:1px solid #e9e3d9; box-shadow:0 12px 35px rgba(0,0,0,.045); border-radius:8px; }
+.card-title { font-size:27px; color:var(--ink); }
+.card-text { color:#615d56; }
+.card a { color:var(--gold-dark); font-weight:700; }
+.service-icon { color:var(--gold-dark); font-size:40px; line-height:1.4; }
+.header { text-align:center; max-width:960px; margin:1rem auto 2rem; color:var(--ink); }
+.contact-section { background:var(--ink); color:var(--cream); padding:4rem 5%; max-width:none; display:flex; gap:5%; align-items:center; }
+.contact-visual { flex:1; min-height:440px; background:radial-gradient(circle at 80% 20%,#625038 0%,transparent 42%),linear-gradient(135deg,#302b24,#121212); border:1px solid #6a5435; display:flex; align-items:center; justify-content:center; padding:2rem; }
+.contact-visual span { color:var(--cream); font:500 clamp(2rem,3vw,3.8rem)/1.25 "Playfair Display",Georgia,serif; }
+.contact-visual em { color:var(--gold); }
+.contact-section #boxy { flex:1; float:none; margin:0; width:auto; max-width:580px; }
+.contact-section h2 { color:var(--cream); }
+.contact-section label { color:var(--cream); }
+.contact-section input:not([type=submit]),.contact-section textarea { color:var(--ink); background:#fff; border:1px solid #bfb9ae; border-radius:4px; }
+.contact-section input[type=submit] { color:var(--ink); background:var(--gold); border:0; min-width:190px; font-weight:700; }
+.footer { background:#0f0f0f !important; color:#d6cfc3; }
+.footer a { color:var(--gold); }
+.footer-inner { min-height:130px; }
+@media (max-width:767px) {
+ .hero { min-height:530px; }
+ .hero #box { padding:4rem 6%; }
+ .hero h1 { font-size:clamp(2.8rem,11vw,4.3rem) !important; }
+ .contact-section { display:block; padding:3rem 6%; }
+ .contact-visual { min-height:240px; margin-bottom:2rem; }
+ .card { min-height:0; margin-bottom:1rem; }
+ .topnav.responsive { background:var(--ink) !important; }
+}
+
+/* Preserve original DNA Designs logo on a light brand plate. */
+.topnav { display:flex !important; align-items:center; justify-content:flex-end; padding:0 2.5%; gap:1.3rem; }
+.topnav > a:first-child { margin-right:auto; background:#f7f4ee; padding:6px 14px; border-radius:0 0 5px 5px; display:flex; align-items:center; gap:6px; min-height:65px; }
+.topnav > a:first-child::after { display:none; }
+.topnav .logo, .topnav .logo-font { max-height:52px; object-fit:contain; }
+@media (max-width:767px) {
+ .topnav { display:block !important; padding:0 3%; min-height:75px; height:auto; }
+ .topnav > a:first-child { display:inline-flex; margin-right:0; }
+ .topnav .icon { position:absolute; top:12px; right:15px; }
+ .topnav.responsive > a { padding:12px; }
+ .topnav.responsive > a:first-child { display:inline-flex; }
+}
