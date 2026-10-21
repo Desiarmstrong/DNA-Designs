@@ -13,3 +13,9 @@
 @media(max-width:800px){.topnav{padding:0 18px}.nav-links{gap:15px}.logo{height:44px}.logo-font{height:39px}.row{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}.contact-visual{min-height:250px}.hero{min-height:560px}}
 @media(max-width:600px){.topnav{flex-wrap:wrap;min-height:72px;gap:0}.topnav>a:first-child{padding:7px 10px}.logo{height:43px}.logo-font{height:34px}.menu-toggle{display:block}.nav-links{display:none;width:100%;flex-direction:column;align-items:stretch;padding:10px 0 20px;gap:0}.nav-links.is-open{display:flex}.nav-links a{padding:12px 8px}.hero{min-height:520px;padding:70px 7%}.hero h1{font-size:clamp(2.7rem,10vw,4.2rem)}.services-intro ul{grid-template-columns:1fr}.contact-section{padding:55px 7%}.footer-inner{display:block}.footer-inner nav{margin:18px 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+/* Helix-first branding: symbol leads, wordmark supports. */
+.topnav .brand-link{gap:12px;min-height:82px}
+.topnav .brand-link .logo{height:64px;width:auto;max-width:78px;object-fit:contain;flex-shrink:0}
+.topnav .brand-link .logo-font{height:36px;width:auto;max-width:180px;object-fit:contain}
+@media(max-width:600px){.topnav .brand-link{min-height:70px;gap:8px}.topnav .brand-link .logo{height:52px;max-width:62px}.topnav .brand-link .logo-font{height:29px;max-width:125px}}
