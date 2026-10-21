@@ -1,7 +1,13 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
+<meta name="theme-color" content="#151515">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DNA Designs | Web Design & Digital Experiences">
+<meta property="og:description" content="Purposeful websites and digital experiences for growing businesses.">
+<meta property="og:url" content="https://dnadesignsllc.netlify.app/">
 	<title>DNA Designs | Web Design & Digital Experiences</title>
 	<meta name="description" content="DNA Designs creates thoughtful websites and digital experiences. Explore our approach and get in touch about your next project.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,10 +15,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<nav class="topnav" id="myTopnav" aria-label="Main navigation">
@@ -21,19 +23,17 @@
 			<img class="logo-font" src="Logos/Logo Font.png" alt="">
 		</a>
 		
-		<a class="middle" href="#services">Services</a>
-		<a class="middle" href="#about">Company</a>
-		<a class="middle" href="#connect">Connect</a>
-		<a href="#myTopnav" class="icon" aria-label="Toggle navigation" aria-expanded="false" onclick="myFunction(event)">
-			<i class="fa fa-bars"></i>
-		</a>
+		<div id="primary-links" class="nav-links"><a class="middle nav-link" href="#services">Services</a>
+		<a class="middle nav-link" href="#about">Company</a>
+		<a class="middle nav-link" href="#connect">Connect</a></div>
+		<button type="button" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-links"><span aria-hidden="true">☰</span></button>
 	</nav>
 	<main id="home">
-<section class="hero">
+<section class="hero" aria-labelledby="hero-heading">
 		<div>
 			<div id="box">
 				
-				<p class="eyebrow">STRATEGY · DESIGN · DIGITAL</p><h1>Digital experiences <em>that move your business.</em></h1>
+				<p class="eyebrow">STRATEGY · DESIGN · DIGITAL</p><h1 id="hero-heading">Digital experiences <em>that move your business.</em></h1>
 				<p>Your web design and development project is unique. 
 				So is your brand. We focus on thoughtful design, clear communication, and digital experiences built around your goals. Let’s talk about what you want to create.</p>
 				<br>
@@ -76,18 +76,17 @@
 	</div>
 	<div>
 		<p class="eyebrow centered">OUR SERVICES</p><h1 class="header" id="services">Everything starts with a stronger digital presence.</h1>
-		<p class="header">Tell us what you are building and we can explore the next steps together.</p>
-		<h2 class="header">Connect With Us</h2>
+		<div class="services-intro"><p>From a first website to a more thoughtful digital presence, we bring strategy, design, and development together.</p><ul><li>Website planning and information architecture</li><li>Responsive website design</li><li>Website development and improvements</li><li>Usability and ongoing refinement</li></ul><a class="text-cta" href="#connect">Talk through your project →</a></div>
 	</div>	
 	<section class="contact-section">
-		<div>
+		<div class="contact-grid">
 			<div class="contact-visual" aria-hidden="true"><span>Good ideas deserve<br><em>great execution.</em></span></div>
 			<div id="boxy">
 				<div  id="connect">
 					<h2>Tell us about your project</h2>
 				</div>
 				
-				<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+				<form name="contact" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
 					<input type="hidden" name="form-name" value="contact">
 					<p hidden><label>Leave this empty: <input name="bot-field"></label></p>
 					<label class="contact-label" for="fname">First Name</label>
@@ -122,12 +121,16 @@
 </footer>
 <script>
 document.getElementById("copyright-year").textContent = new Date().getFullYear();
-function myFunction(event) {
- if (event) event.preventDefault();
- const nav = document.getElementById("myTopnav");
- const toggle = nav.querySelector(".icon");
- toggle.setAttribute("aria-expanded", String(nav.classList.toggle("responsive")));
-}
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav-links");
+toggle.addEventListener("click", () => {
+ const open = nav.classList.toggle("is-open");
+ toggle.setAttribute("aria-expanded", String(open));
+});
+nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+ nav.classList.remove("is-open");
+ toggle.setAttribute("aria-expanded", "false");
+}));
 </script>
 </body>
 </html>
