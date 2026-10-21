@@ -379,3 +379,29 @@ a.middle:hover:before {
   visibility: visible;
   transform: scaleX(1);
 }
+
+
+/* Progressive responsive and accessibility improvements */
+html { scroll-behavior: smooth; }
+body { overflow-x: hidden; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid #175cd3;
+  outline-offset: 3px;
+}
+.contact-section { display: flow-root; padding: 3rem 4%; margin: 2rem auto; max-width: 1200px; }
+.contact-image { display: block; width: 42%; max-width: 100%; float: left; margin-right: 3%; box-shadow: 0 16px 48px rgba(0,0,0,.12); }
+.footer { clear: both; padding: 2rem 4%; }
+.footer-inner { max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; align-items: center; }
+.footer-inner nav { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+.topnav { z-index: 100; }
+@media (max-width: 767px) {
+  .contact-image { float: none; width: 100%; margin: 0 0 2rem; }
+  #boxy { float: none; width: 100%; max-width: 100%; margin: 0; }
+  .contact-section input, .contact-section textarea { max-width: 100%; }
+  .footer-inner { display: block; }
+  .footer-inner nav { margin: 1rem 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
