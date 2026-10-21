@@ -1,15 +1,9 @@
 <!doctype html>
 <html>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169240650-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-		  	function gtag(){dataLayer.push(arguments);}
-		  	gtag('js', new Date());
-		  	gtag('config', 'UA-169240650-1');
-		</script><meta charset="utf-8">
-	<title>DNA Designs Homepage</title>
+	<meta charset="utf-8">
+	<title>DNA Designs | Web Design & Digital Experiences</title>
+	<meta name="description" content="DNA Designs creates thoughtful websites and digital experiences. Explore our approach and get in touch about your next project.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,39 +12,34 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="topnav" id="myTopnav">
+	<nav class="topnav" id="myTopnav" aria-label="Main navigation">
 		<a class="middle" href="#home">
 			<img class="logo" src="Logos/Logo without Words.png" alt="DNA Designs Logo">
 			<img class="logo-font" src="Logos/Logo Font.png" href="#home" alt="Logo-Font">
 		</a>
 		<a class="middle" href="#portfolio">Portfolio</a>
-		<a class="middle" href="#news">Services</a>
-		<a class="middle" href="#news">Services</a>
-		<a class="middle" href="#team">Company</a>
-		<a class="middle" href="#news">Resources</a>
+		<a class="middle" href="#services">Services</a>
+		<a class="middle" href="#about">Company</a>
 		<a class="middle" href="#connect">Connect</a>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<a href="#navigation" class="icon" aria-label="Toggle navigation" aria-expanded="false" onclick="myFunction(event)">
 			<i class="fa fa-bars"></i>
 		</a>
-	</div>
+	</nav>
 	<section class="hero" >
 		<div>
 			<div id="box">
 				
 				<h1>Digital Marketing Agency</h1>
 				<p>Your web design and development project is unique. 
-				So is your brand feel. We build hundreds of custom 
-				websites every year, and know how to overcome the 
-				challenges of today’s unique technical, design, SEO, 
-				and ADA requirements. Let's do this!</p>
+				So is your brand. We focus on thoughtful design, clear communication, and digital experiences built around your goals. Let’s talk about what you want to create.</p>
 				<br>
-				<button>Get Started</button>
+				<a class="btn btn-primary" href="#connect">Get Started</a>
 			</div>
 		</div>
 	</section>
 	<div>
 		<div>
-			<h1 id="header">About Us</h1>
+			<h1 id="about">About Us</h1>
 		</div>
 		<div class="container-fluid">
 			<div class="row" >
@@ -58,32 +47,32 @@
 					<img class="card-img-top" src="cowomen-pd5FVvQ9-aY-unsplash.jpg"   alt="Card image">
 					<div class="card-body">
 						<h4 class="card-title">Who We Are</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </p><br>
-						<center><button style="color: white; align-content: center">Case Study</button></center>
+						<p class="card-text">We believe good digital work starts by understanding the people it serves. Explore our approach and contact us to discuss your project.</p><br>
+						<p><a href="#connect">Discuss a project →</a></p>
 					</div>
 				</div>
 				<div class="col-sm-4 card">
 					<img class="card-img-top" src="patrik-michalicka-r3iAqHb7JWs-unsplash.jpg" alt="Card image" >
 					<div class="card-body">
 						<h4 class="card-title">How We Make a Difference</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </p><br>
-						<center><button style="color: white">Case Study</button></center>
+						<p class="card-text">We believe good digital work starts by understanding the people it serves. Explore our approach and contact us to discuss your project.</p><br>
+						<p><a href="#connect">Discuss a project →</a></p>
 					</div>
 				</div>
 				<div class="col-sm-4 card">
 					<img class="card-img-top" src="alvaro-reyes-KxVlKiqQObU-unsplash.jpg"  alt="Card image">
 					<div class="card-body">
 						<h4 class="card-title">What We are Doing</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </p><br>
-						<center><button style="color: white">Case Study</button></center>
+						<p class="card-text">We believe good digital work starts by understanding the people it serves. Explore our approach and contact us to discuss your project.</p><br>
+						<p><a href="#connect">Discuss a project →</a></p>
 					</div>
 				</div>
 			</div>	
 		</div>
 	</div>
 	<div>
-		<h1 class="header">Quote</h1>
-		<h1 class="header">Upcoming Events</h1>
+		<h1 class="header" id="services">Web Design & Digital Services</h1>
+		<p class="header">Tell us what you are building and we can explore the next steps together.</p>
 		<h1 class="header">Connect With Us</h1>
 	</div>	
 	<section style="margin-bottom: 700px;">
@@ -96,18 +85,20 @@
 					<br>
 				</div>
 				
-				<form action="/action_page.php">
+				<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+					<input type="hidden" name="form-name" value="contact">
+					<p hidden><label>Leave this empty: <input name="bot-field"></label></p>
 					<label id="contact" for="fname">First Name</label>
-					<input type="text" id="fname" name="firstname" placeholder="Your name..">   
+					<input type="text" id="fname" name="firstname" required placeholder="Your name..">   
 
 					<label id="contact" for="lname">   Last Name</label>
-					<input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+					<input type="text" id="lname" name="lastname" required placeholder="Your last name.."><br>
 
 					<label id="contact" for="email">Email</label>
-					<input type="email" id="email" name="email" placeholder="Your email address.."><br>
+					<input type="email" id="email" name="email" required placeholder="Your email address.."><br>
 
 					<label id="contact" for="message">Message</label><br>
-					<textarea id="message" name="message" placeholder="Message.." style="height:200px"></textarea><br>
+					<textarea id="message" name="message" required placeholder="Message.." style="height:200px"></textarea><br>
 					<br>
 					<br>
 					<input type="submit" value="Connect With Us">
@@ -123,13 +114,13 @@
 		<footer class="footer">
 			<br><br><br>		
 			<h3 id="sitemap" >Sitemap</h3>
-			<h3 id="sitemap" >Newsketter Signup</h3>
+			<h3 id="sitemap">Contact</h3>
 			<h3 id="sitemap" >Services</h3>
 			<h3 id="sitemap" >Careers</h3>
 			<h3 id="sitemap" >Contact</h3>
 			<br>
 			<p id="sitemap" >Sitemap</p>
-			<p id="sitemap" >Newsketter Signup</p>
+			<p id="sitemap"><a href="#connect">Send a message</a></p>
 			<p id="sitemap" >Services</p>
 			<p id="sitemap" >Careers</p>
 			<p id="sitemap" >Contact</p>
@@ -249,6 +240,15 @@
 			  }
 		}
 	</script>-->
+<script>
+function myFunction(event) {
+  if (event) event.preventDefault();
+  var nav = document.getElementById("myTopnav");
+  var toggle = nav.querySelector(".icon");
+  var expanded = nav.classList.toggle("responsive");
+  toggle.setAttribute("aria-expanded", String(expanded));
+}
+</script>
 </body>
 </html>
 
@@ -340,7 +340,7 @@
 		<h1>Team</h1>
 	</div>
 	<div>
-		<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p class="lorem">We believe good digital work starts by understanding the people it serves. Explore our approach and contact us to discuss your project.in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.We believe good digital work starts by understanding the people it serves. Explore our approach and contact us to discuss your project.in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.We believe good digital work starts by understanding the people it serves. Explore our approach and contact us to discuss your project.in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.We believe good digital work starts by understanding the people it serves. Explore our approach and contact us to discuss your project.in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.We believe good digital work starts by understanding the people it serves. Explore our approach and contact us to discuss your project.in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 	
 	</div>-->
