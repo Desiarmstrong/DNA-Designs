@@ -26,3 +26,19 @@
 .topnav .brand-wordmark{font-family:"DM Sans",Arial,sans-serif;font-size:clamp(1.15rem,2vw,1.7rem);font-weight:700;letter-spacing:.025em;line-height:1.1;white-space:nowrap;color:var(--cream)}
 .topnav .brand-wordmark span{font-weight:400}
 @media(max-width:600px){.topnav>a.brand-link{min-height:70px;gap:9px;padding:7px 0}.topnav .brand-link .logo{height:52px;width:58px}.topnav .brand-wordmark{font-size:1.15rem}}
+
+/* Customer-ready improvements */
+.skip-link{position:absolute;top:-100px;left:12px;background:white;color:#151515;padding:12px 18px;z-index:100;border:2px solid #151515}
+.skip-link:focus{top:12px}
+.section-heading{font-family:"Playfair Display",Georgia,serif}
+.work-section{background:#eae5dc;padding:72px 24px;text-align:center}
+.work-inner{max-width:760px;margin:auto}
+.work-section .section-heading{color:var(--ink);font-size:clamp(2rem,4vw,3.7rem);margin:14px 0 22px}
+.work-section p:not(.eyebrow){font-size:1.1rem}
+.services-intro ul{list-style:disc;line-height:1.7}
+.services-intro li{padding:4px 0}
+.contact-section .form-submit{display:inline-block;border:0;border-radius:5px;padding:14px 24px;background:var(--gold);color:var(--ink);cursor:pointer;font:700 1rem "DM Sans",Arial,sans-serif}
+.contact-section .form-submit:hover{background:#ead0a3}
+.contact-section .form-note{font-size:.84rem;line-height:1.5;color:#ded5c7}
+#home,#about,#services,#work,#connect{scroll-margin-top:110px}
+@media(max-width:600px){.topnav .brand-wordmark{font-size:1rem}.topnav .brand-link .logo{width:49px;height:49px}.work-section{padding:52px 7%}.contact-section .form-submit{width:100%}}

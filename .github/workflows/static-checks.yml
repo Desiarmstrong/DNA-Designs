@@ -38,3 +38,6 @@ jobs:
               raise SystemExit('Missing local assets: '+', '.join(missing))
           print('HTML parsed; local script, image, and stylesheet references found.')
           PY
+
+      - name: Website smoke tests
+        run: python3 tests/site_smoke.py
