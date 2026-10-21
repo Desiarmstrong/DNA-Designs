@@ -1,15 +1,9 @@
 <!doctype html>
 <html>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169240650-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-		  	function gtag(){dataLayer.push(arguments);}
-		  	gtag('js', new Date());
-		  	gtag('config', 'UA-169240650-1');
-		</script><meta charset="utf-8">
-	<title>DNA Designs Homepage</title>
+	<meta charset="utf-8">
+	<title>DNA Designs | Web Design & Digital Experiences</title>
+	<meta name="description" content="DNA Designs creates thoughtful websites and digital experiences. Explore our approach and get in touch about your next project.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,39 +12,35 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="topnav" id="myTopnav">
+	<nav class="topnav" id="myTopnav" aria-label="Main navigation">
 		<a class="middle" href="#home">
 			<img class="logo" src="Logos/Logo without Words.png" alt="DNA Designs Logo">
-			<img class="logo-font" src="Logos/Logo Font.png" href="#home" alt="Logo-Font">
+			<img class="logo-font" src="Logos/Logo Font.png" alt="">
 		</a>
-		<a class="middle" href="#portfolio">Portfolio</a>
-		<a class="middle" href="#news">Services</a>
-		<a class="middle" href="#news">Services</a>
-		<a class="middle" href="#team">Company</a>
-		<a class="middle" href="#news">Resources</a>
+		
+		<a class="middle" href="#services">Services</a>
+		<a class="middle" href="#about">Company</a>
 		<a class="middle" href="#connect">Connect</a>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<a href="#myTopnav" class="icon" aria-label="Toggle navigation" aria-expanded="false" onclick="myFunction(event)">
 			<i class="fa fa-bars"></i>
 		</a>
-	</div>
-	<section class="hero" >
+	</nav>
+	<main id="home">
+<section class="hero">
 		<div>
 			<div id="box">
 				
-				<h1>Digital Marketing Agency</h1>
+				<h1>Thoughtful websites. Distinctive digital experiences.</h1>
 				<p>Your web design and development project is unique. 
-				So is your brand feel. We build hundreds of custom 
-				websites every year, and know how to overcome the 
-				challenges of today’s unique technical, design, SEO, 
-				and ADA requirements. Let's do this!</p>
+				So is your brand. We focus on thoughtful design, clear communication, and digital experiences built around your goals. Let’s talk about what you want to create.</p>
 				<br>
-				<button>Get Started</button>
+				<a class="btn btn-primary" href="#connect">Get Started</a>
 			</div>
 		</div>
 	</section>
 	<div>
 		<div>
-			<h1 id="header">About Us</h1>
+			<h1 id="about">About Us</h1>
 		</div>
 		<div class="container-fluid">
 			<div class="row" >
@@ -58,56 +48,56 @@
 					<img class="card-img-top" src="cowomen-pd5FVvQ9-aY-unsplash.jpg"   alt="Card image">
 					<div class="card-body">
 						<h4 class="card-title">Who We Are</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </p><br>
-						<center><button style="color: white; align-content: center">Case Study</button></center>
+						<p class="card-text">We start with your goals and your audience, then shape the experience around what matters most.</p><br>
+						<p><a href="#connect">Discuss a project →</a></p>
 					</div>
 				</div>
 				<div class="col-sm-4 card">
 					<img class="card-img-top" src="patrik-michalicka-r3iAqHb7JWs-unsplash.jpg" alt="Card image" >
 					<div class="card-body">
 						<h4 class="card-title">How We Make a Difference</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </p><br>
-						<center><button style="color: white">Case Study</button></center>
+						<p class="card-text">A clear process, thoughtful design decisions, and practical collaboration make a stronger foundation.</p><br>
+						<p><a href="#connect">Discuss a project →</a></p>
 					</div>
 				</div>
 				<div class="col-sm-4 card">
 					<img class="card-img-top" src="alvaro-reyes-KxVlKiqQObU-unsplash.jpg"  alt="Card image">
 					<div class="card-body">
-						<h4 class="card-title">What We are Doing</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </p><br>
-						<center><button style="color: white">Case Study</button></center>
+						<h4 class="card-title">What We Do</h4>
+						<p class="card-text">From planning to polished pages, we focus on creating an experience that is easy to use and maintain.</p><br>
+						<p><a href="#connect">Discuss a project →</a></p>
 					</div>
 				</div>
 			</div>	
 		</div>
 	</div>
 	<div>
-		<h1 class="header">Quote</h1>
-		<h1 class="header">Upcoming Events</h1>
-		<h1 class="header">Connect With Us</h1>
+		<h1 class="header" id="services">Web Design & Digital Services</h1>
+		<p class="header">Tell us what you are building and we can explore the next steps together.</p>
+		<h2 class="header">Connect With Us</h2>
 	</div>	
-	<section style="margin-bottom: 700px;">
+	<section class="contact-section">
 		<div>
-			<img src="Hello Coffee.jpg" style="width:45%; float:left; box-shadow: 0 80px 160px 0 rgba(0,0,0,0.2);">
+			<img class="contact-image" src="Hello Coffee.jpg" alt="Coffee and workspace">
 			<div id="boxy">
 				<div  id="connect">
-					<h1></h1>
-					<br>
-					<br>
+					<h2>Tell us about your project</h2>
 				</div>
 				
-				<form action="/action_page.php">
-					<label id="contact" for="fname">First Name</label>
-					<input type="text" id="fname" name="firstname" placeholder="Your name..">   
+				<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+					<input type="hidden" name="form-name" value="contact">
+					<p hidden><label>Leave this empty: <input name="bot-field"></label></p>
+					<label class="contact-label" for="fname">First Name</label>
+					<input type="text" id="fname" name="firstname" required placeholder="Your name..">   
 
-					<label id="contact" for="lname">   Last Name</label>
-					<input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+					<label class="contact-label" for="lname">   Last Name</label>
+					<input type="text" id="lname" name="lastname" required placeholder="Your last name.."><br>
 
-					<label id="contact" for="email">Email</label>
-					<input type="email" id="email" name="email" placeholder="Your email address.."><br>
+					<label class="contact-label" for="email">Email</label>
+					<input type="email" id="email" name="email" required placeholder="Your email address.."><br>
 
-					<label id="contact" for="message">Message</label><br>
-					<textarea id="message" name="message" placeholder="Message.." style="height:200px"></textarea><br>
+					<label class="contact-label" for="message">Message</label><br>
+					<textarea id="message" name="message" required placeholder="Message.." style="height:200px"></textarea><br>
 					<br>
 					<br>
 					<input type="submit" value="Connect With Us">
@@ -119,228 +109,22 @@
 			</div>
 	  	</div>
 	</section>
-	<div style="margin-top:700px;">
-		<footer class="footer">
-			<br><br><br>		
-			<h3 id="sitemap" >Sitemap</h3>
-			<h3 id="sitemap" >Newsketter Signup</h3>
-			<h3 id="sitemap" >Services</h3>
-			<h3 id="sitemap" >Careers</h3>
-			<h3 id="sitemap" >Contact</h3>
-			<br>
-			<p id="sitemap" >Sitemap</p>
-			<p id="sitemap" >Newsketter Signup</p>
-			<p id="sitemap" >Services</p>
-			<p id="sitemap" >Careers</p>
-			<p id="sitemap" >Contact</p>
-		</footer>
-	</div>
-	<!--<div>
-		
-		
-			<img src="DNA img.jpg" alt="design code" style="transform: skewx(-20deg);width:30%; border-radius:5px; margin-left:10%; margin-bottom: 100px; float:left; position:relative;">
-		<div style="padding:60px; background: #ab545f; width: 30%; color:#ffffff; margin-left: 30%;margin-top: -100px; margin-bottom: 250px; font-family:'alex-brush'; text-align:center; border-radius: 5px; float:left; position: absolute;">
-				<form action="/action_page.php">
-					<label for="fname">First Name</label>
-					<input type="text" id="fname" name="firstname" placeholder="Your name..">   
-
-					<label for="lname">   Last Name</label>
-					<input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
-
-					<label for="email">Email</label>
-					<input type="email" id="email" name="email" placeholder="Your email address.."><br>
-
-					<label for="message">Message</label><br>
-					<textarea id="message" name="message" placeholder="Message.." style="height:200px"></textarea><br>
-
-					<input type="submit" value="Submit"><br>
-				</form>
-			</div>
-		</div>-->
-	
-
-	<!--
-		<footer class="footer">
-		<div><div>
-		  	<h1 style="center">Connect With Us</h1>
-			<h1 class="header">Quote</h1>
-			<h4>Phone (434) 202-4078</h4>
-		</div>
-		<div class="sitemap">
-			<table>
-				<tr> 
-					<th>Protfolio</th>
-					<th>Services</th>
-					<th>Approach</th>
-					<th>Company</th>
-					<th>Resources</th>
-					<th>Connect with Us</th>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-					<td>About Us</td>
-					<td>Blog</td>
-					<td>Subscribe to our newsletter</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>2</td>
-					<td>2</td>
-					<td>Team</td>
-					<td>Events</td>
-					<td>Email</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>3</td>
-					<td>3</td>
-					<td>Careers</td>
-					<td>Press</td>
-					<td>3</td>
-				</tr>
-				<tr>
-					<td>4</td>
-					<td>4</td>
-					<td>4</td>
-					<td>Freelance for Us</td>
-					<td>FAQ</td>
-					<td>4</td>
-				</tr>
-			</table> 
-		</div>
-		<div>
-				<a href="#" class="fa fa-facebook"></a>
-				<a href="#" class="fa fa-twitter"></a>
-				<a href="#" class="fa fa-linkedin"></a>
-				<a href="#" class="fa fa-youtube"></a>
-				<a href="#" class="fa fa-instagram"></a>
-				<a href="#" class="fa fa-pinterest"></a>
-				<a href="#" class="fa fa-tumblr"></a>
-				<a href="#" class="fa fa-rss"></a>
-		</div>
-		<div class="copyright">
-			<a>Copyright © 2020 DNA Designs Media, LLC. All rights reserved.</a> <a>Cookies Privacy</a>  <a>Policy</a>  <a>Terms of use</a>  <a>Continuity Policy</a><a>Sitemap</a>
-		</div>
-	</div>
-	</footer>-->	
-	
-	<!--<script>
-		function myFunction() {
-		  var x = document.getElementById("myTopnav");
-		  if (x.className === "topnav") {
-			x.className += " responsive";
-		  } else {
-			x.className = "topnav";
-		  }
-		}
-	</script>
-	<script>
-		window.onscroll = function() {myFunction()};
-			var navbar = document.getElementById("myNavbar");
-			var sticky = navbar.offsetTop;
-
-		function myFunction() {
-			  if (window.pageYOffset >= sticky) {
-				navbar.classList.add("sticky")
-			  } else {
-				navbar.classList.remove("sticky");
-			  }
-		}
-	</script>-->
+</main>
+<footer class="footer">
+ <div class="footer-inner">
+  <strong>DNA Designs</strong>
+  <nav aria-label="Footer navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#connect">Contact</a></nav>
+  <p>&copy; <span id="copyright-year">2026</span> DNA Designs. All rights reserved.</p>
+ </div>
+</footer>
+<script>
+document.getElementById("copyright-year").textContent = new Date().getFullYear();
+function myFunction(event) {
+ if (event) event.preventDefault();
+ const nav = document.getElementById("myTopnav");
+ const toggle = nav.querySelector(".icon");
+ toggle.setAttribute("aria-expanded", String(nav.classList.toggle("responsive")));
+}
+</script>
 </body>
 </html>
-
-	<!--<div class="hero-inner">
-			</div>
-			<div class="hero-quote">
-				<blockquote class="header-quote" style="padding-top: 50px">
-				“UI is the saddle, the stirrups, & the reins. <br>UX is the feeling you get being able to ride the horse.”<br>
-				— Dain Miller, Web Developer
-				</blockquote></q>
-			</div>
-			<blockquote class="header-quote" style="padding-top: 50px">
-			“UI is the saddle, the stirrups, & the reins. <br>UX is the feeling you get being able to ride the horse.”<br>
-			— Dain Miller, Web Developer
-		</blockquote>
-		<!--<blockquote class="header-quote">
-			“When we strive to become better than we are, <br>everything around us becomes better too.”
-			Paulo Coelho
-		</blockquote>
-		<blockquote class="header-quote">
-			"Creativity is inventing, experimenting, growing, taking risks, breaking rules, making mistakes, and having fun." -- Mary Lou Cook</blockquote>
-		<blockquote class="header-quote">
-			"Creativity involves breaking out of expected patterns in order to look at things in a different way." -- Edward de Bono
-		</blockquote>
-	<div class="header" id="portfolio">
-		<h1>Portfolio</h1>
-	</div>	
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-2 card" style="width:400px">
-				<img class="card-img-top" src="Count Your Eggs.jpg" alt="Card image" style="display:block; margin-left: auto; margin-right: auto; object-fit:contain">
-				<div class="card-body">
-					<h4 class="card-title">Count Your Eggs Inventory Management</h4>
-					<p class="card-text">Software as a service restuarant inventory management system for small and boutique restaurants.</p><br>
-					<a href="#" class="btn card-btn">Case Study</a>
-				</div>
-			</div><div class="col-sm-2 card" style="width:400px">
-				<img class="card-img-top" src="SharedScreenshot.jpg" alt="Card image" style="display:block; margin-left: auto; margin-right: auto; object-fit:contain">
-				<div class="card-body">
-					<h4 class="card-title">Personal Webpage</h4>
-					<p class="card-text">Some example text some example text. John Doe is an architect and engineer</p><br>
-					<a href="#" class="btn card-btn">Case Study</a>
-				</div>
-			</div>
-			<div class="col-sm-2 card" style="width:400px">
-				<img class="card-img-top" src="Kansas City Yoga.jpg" alt="Card image" style="display:block; margin-left: auto; margin-right: auto; object-fit:contain">
-				<div class="card-body">
-					<h4 class="card-title">Yoga Business Page</h4>
-					<p class="card-text">Some example text some example text. John Doe is an architect and engineer</p><br>
-					<a href="#" class="btn card-btn">Case Study</a>
-				</div>
-			</div>
-			<div class="col-sm-2 card" style="width:400px">
-				<img class="card-img-top" src="Yardsale php page.jpg" alt="Card image" style="display:block; margin-left: auto; margin-right: auto; object-fit:contain">
-				<div class="card-body">
-					<h4 class="card-title">Website Redesign</h4>
-					<p class="card-text">Some example text some example text. John Doe is an architect and engineer</p><br>
-					<a href="#" class="btn card-btn">Case Study</a>
-				</div>
-			</div>
-			
-			<div class="col-sm-2 card" style="width:400px">
-				<img class="card-img-top" src="Logo-With-Gradient.png" alt="Card image" style="display:block; margin-left: auto; margin-right: auto; width: 50%" >
-				<div class="card-body">
-					<h4 class="card-title">Logo</h4>
-					<p class="card-text">Some example text some example text. John Doe is an architect and engineer</p><br>
-					<a href="#" class="btn card-btn">Case Study</a>
-				</div>
-			</div>
-			<div class="col-sm-2 card" style="width:400px">
-				<img class="card-img-top" src="StockSnap_BHAVWHFOLG (1).png" alt="Card image" style="display:block; margin-left: auto; margin-right: auto;">
-				<div class="card-body">
-					<h4 class="card-title">Logo Redesign</h4>
-					<p class="card-text">Armstrong Consulting needed a redesign for their logo.</p><br>
-					<a href="#" class="btn card-btn">Case Study</a>
-				</div>
-			</div>
-			<div class="col-sm-2 card" style="width:400px">
-				<img class="card-img-top" src="StockSnap_BHAVWHFOLG.jpg" alt="Card image" style="display:block; margin-left: auto; margin-right: auto; width: 50%">
-				<div class="card-body">
-					<h4 class="card-title">Logo Redesign</h4>
-					<p class="card-text">Armstrong Consulting needed a redesign for their logo.</p><br>
-					<a href="#" class="btn card-btn">Case Study</a>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="header" id="team">
-		<h1>Team</h1>
-	</div>
-	<div>
-		<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-	
-	</div>-->

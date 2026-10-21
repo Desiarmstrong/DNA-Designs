@@ -1,0 +1,40 @@
+name: Static site checks
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate entrypoint and local references
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          class SiteParser(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.refs=[]
+              def handle_starttag(self,tag,attrs):
+                  d=dict(attrs)
+                  if tag in ('script','img') and d.get('src'): self.refs.append(d['src'])
+                  if tag=='link' and d.get('href'): self.refs.append(d['href'])
+          root=Path('.')
+          assert (root/'index.html').is_file(), 'Missing root index.html'
+          parser=SiteParser()
+          parser.feed((root/'index.html').read_text(encoding='utf-8'))
+          missing=[]
+          for ref in parser.refs:
+              if ref.startswith(('http:','https:','//','data:','#','mailto:')): continue
+              path=ref.split('?',1)[0].split('#',1)[0].lstrip('/')
+              if path and not (root/path).is_file(): missing.append(ref)
+          if missing:
+              raise SystemExit('Missing local assets: '+', '.join(missing))
+          print('HTML parsed; local script, image, and stylesheet references found.')
+          PY
