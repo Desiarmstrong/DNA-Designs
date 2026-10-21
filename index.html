@@ -109,20 +109,22 @@
 			</div>
 	  	</div>
 	</section>
-	<div style="margin-top:700px;">
-		<footer class="footer">
-			<br><br><br>		
-			<h3 id="sitemap" >Sitemap</h3>
-			<h3 id="sitemap">Contact</h3>
-			<h3 id="sitemap" >Services</h3>
-			<h3 id="sitemap" >Careers</h3>
-			<h3 id="sitemap" >Contact</h3>
-			<br>
-			<p id="sitemap" >Sitemap</p>
-			<p id="sitemap"><a href="#connect">Send a message</a></p>
-			<p id="sitemap" >Services</p>
-			<p id="sitemap" >Careers</p>
-			<p id="sitemap" >Contact</p>
-		</footer>
-	</div>
-	
+</main>
+<footer class="footer">
+ <div class="footer-inner">
+  <strong>DNA Designs</strong>
+  <nav aria-label="Footer navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#connect">Contact</a></nav>
+  <p>&copy; <span id="copyright-year">2026</span> DNA Designs. All rights reserved.</p>
+ </div>
+</footer>
+<script>
+document.getElementById("copyright-year").textContent = new Date().getFullYear();
+function myFunction(event) {
+ if (event) event.preventDefault();
+ const nav = document.getElementById("myTopnav");
+ const toggle = nav.querySelector(".icon");
+ toggle.setAttribute("aria-expanded", String(nav.classList.toggle("responsive")));
+}
+</script>
+</body>
+</html>
